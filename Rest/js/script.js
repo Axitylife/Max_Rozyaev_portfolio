@@ -1,8 +1,5 @@
 jQuery(document).ready(function () {
      
-     $(".phone").mask("+380 (99) 999-99-99"); 
-    
-   
     jQuery('.send-form').click( function() {
     	var form = jQuery(this).closest('form');
     	
@@ -31,13 +28,36 @@ jQuery(document).ready(function () {
 
 });
 
-let btnOpen = document.querySelector('.btn_reserve');
-let menu = document.querySelector('.window_module');
-let btnClose = document.querySelector('.btn_close');
+const btnOpen = document.querySelector('.btn_reserve');
+const menu = document.querySelector('.window_module');
+const btnClose = document.querySelector('.btn_close');
 btnOpen.onclick = function (){
     menu.style.display = 'block';
 };
 
 btnClose.onclick = function (){
     menu.style.display = 'none';
+}
+
+const meneBurgerBtn = document.querySelector('.menu_burger_btn');
+const meneBurger = document.querySelector('.menu_list');
+let showMenu = false;
+meneBurgerBtn.onclick = function(){
+	if (showMenu === false){
+	meneBurger.style.display = 'block';
+	meneBurger.style.position = 'fixed';
+	meneBurger.style.top = '50px';
+	meneBurger.style.background = '#3a4574';
+	meneBurger.style.width = '100%';
+	meneBurger.style.height = '250px';
+	const elementsMenu = document.querySelectorAll('.menu_list_element')
+	for(let k of elementsMenu){
+		k.style.marginTop = "25px";
+	}
+	showMenu = true;
+}else
+{
+	meneBurger.style.display = 'none';
+	showMenu = false;
+}
 }
