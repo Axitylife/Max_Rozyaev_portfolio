@@ -81,7 +81,8 @@ ul {
   margin-bottom: 40px;
 }
 .btn_reserve {
-  width: 270px;
+  max-width: 270px;
+  width: 100%;
   height: 100px;
   border: none;
   background: #3a4574;
@@ -94,6 +95,7 @@ ul {
 .flex_box_menu {
   display: flex;
   margin-top: 40px;
+  margin: 0 auto;
 }
 .social_media_btn_list,
 .flex_box {
@@ -129,20 +131,23 @@ ul {
 }
 .img_one {
   position: relative;
-  width: 323px;
+  max-width: 323px;
+  width: 100%;
   height: 486px;
   top: 120px;
 }
 .img_two {
   position: absolute;
-  width: 471px;
+  max-width: 471px;
+  width: 100%;
   height: 502px;
   top: 10%;
   left: 10%;
 }
 .img_three {
   position: relative;
-  width: 323px;
+  max-width: 323px;
+  width: 100%;
   height: 486px;
   margin-left: 20px;
 }
@@ -175,7 +180,7 @@ ul {
   width: 100%;
   left: 0;
   max-width: 100%;
-
+  width: 100%;
   z-index: -1;
 }
 .section {
@@ -199,7 +204,8 @@ ul {
   margin-bottom: 220px;
 }
 .description_lorem {
-  width: 785px;
+  max-width: 785px;
+  width: 100%;
   height: 111px;
   font-weight: 400;
   font-size: 16px;
@@ -223,7 +229,6 @@ ul {
 }
 .block_flex {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
 }
 .block_flex:nth-child(2) {
@@ -250,7 +255,8 @@ ul {
   font-size: 16px;
   line-height: 32px;
   color: #808080;
-  width: 470px;
+  max-width: 470px;
+  width: 100%;
   height: 96px;
 }
 .flex_border {
@@ -325,7 +331,8 @@ ul {
   display: block;
 }
 .name {
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
   height: 80px;
   font-size: 16px;
 }
@@ -365,7 +372,8 @@ ul {
 .btn_send {
   background: #3a4574;
   border: none;
-  width: 270px;
+  max-width: 270px;
+  width: 100%;
   height: 100px;
   color: white;
   font-weight: 500;
@@ -456,11 +464,13 @@ figure {
 .modyle_content {
   background-color: white;
   max-width: 700px;
+  width: 100%;
   height: 500px;
   margin: auto auto;
 }
 .btn_submit {
-  width: 270px;
+  max-width: 270px;
+  width: 100%;
   height: 100px;
   border: none;
   background: #3a4574;
@@ -509,9 +519,56 @@ form textarea {
   align-items: center;
   line-height: 18px;
 }
-
+ul {
+  border: red solid;
+}
 form button {
   height: 50px;
   width: 100%;
   cursor: pointer;
+}
+@media (max-width: 930px) {
+  .flex_box_menu {
+    flex-wrap: wrap;
+  }
+  .wrapper {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header_menu {
+    flex-wrap: wrap;
+  }
+  .img_one,
+  .img_two,
+  .img_three {
+    display: none;
+  }
+  .input_data_big {
+    max-width: 100%;
+  }
+  .block_flex {
+    flex-wrap: wrap;
+  }
+  .description_eeat {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .ul {
+    flex-wrap: wrap;
+  }
+  .background_img {
+    position: absolute;
+    width: none;
+    height: none;
+  }
+  .schedule_text {
+    margin-top: 50px;
+  }
+  .motto_text {
+    font-size: 44px;
+  }
+  .menu_list_element {
+    display: none;
+  }
 }
