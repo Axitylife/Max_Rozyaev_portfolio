@@ -47,6 +47,7 @@ ul {
 .navigation_list_element {
   color: white;
   text-decoration: none;
+  transition-duration: 800ms;
 }
 .phone_number_and_img_listt,
 .menu_list {
@@ -91,9 +92,11 @@ ul {
   background: #3a4574;
   color: white;
   font-size: 18px;
+  transition-duration: 700ms;
 }
 .btn_reserve:hover {
   background-color: #23273b;
+  font-size: 20px;
 }
 .flex_box_menu {
   display: flex;
@@ -394,9 +397,11 @@ ul {
   line-height: 24px;
   margin-top: 40px;
   margin-bottom: 50px;
+  transition-duration: 700ms;
 }
 .btn_send:hover {
   background-color: #23273b;
+  font-size: 26px;
 }
 .text_area_input {
   width: 680px;
@@ -590,7 +595,8 @@ form button {
     font-size: 44px;
   }
   .menu_list {
-    display: none;
+    transition-duration: 800ms;
+    transform: translateY(-500px);
   }
   .flex_box {
     flex-wrap: wrap;
@@ -608,6 +614,7 @@ form button {
     top: 7px;
     right: 7px;
     position: absolute;
+    z-index: 3;
   }
   .slider .slick-arrow {
     top: -10px;

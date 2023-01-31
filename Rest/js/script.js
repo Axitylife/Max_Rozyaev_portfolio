@@ -50,6 +50,7 @@ meneBurgerBtn.onclick = function(){
 	meneBurger.style.background = '#3a4574';
 	meneBurger.style.width = '100%';
 	meneBurger.style.height = '250px';
+	meneBurger.style.transform = 'translateY(0px)';
 	const elementsMenu = document.querySelectorAll('.menu_list_element')
 	for(let k of elementsMenu){
 		k.style.marginTop = "25px";
@@ -57,7 +58,8 @@ meneBurgerBtn.onclick = function(){
 	showMenu = true;
 }else
 {
-	meneBurger.style.display = 'none';
+	meneBurger.style.transform = 'translateY(-500px)';
+	meneBurger.style.display = 'block';
 	showMenu = false;
 }
 }
