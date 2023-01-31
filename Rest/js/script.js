@@ -42,6 +42,8 @@ btnClose.onclick = function (){
 const meneBurgerBtn = document.querySelector('.menu_burger_btn');
 const meneBurger = document.querySelector('.menu_list');
 let showMenu = false;
+
+
 meneBurgerBtn.onclick = function(){
 	if (showMenu === false){
 	meneBurger.style.display = 'block';
